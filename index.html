@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <h2>♥ My Dearest Beautiful Princess ♥</h2>
+                        <p class="LL">
+                            From the moment I met you, I knew my life had changed forever. Your love has brought joy, comfort,
+                             and peace into my world, and for that, I am eternally grateful. I promise to cherish, support, a
+                             nd stand by your side through every trial and triumph. My heart belongs to you completely. <br><br>
+                             There are no words to express the depth of my feelings for you. You’ve shown me what true love is, 
+                             and I am endlessly grateful to have you in my life. 
+                             My heart beats only for you, and every day spent with you feels like a gift. <br><br>
+                             You are my heart’s greatest treasure, and my life feels complete with you in it. 
+                             You’ve been my strength in hard times and my joy in the happiest moments. 
+                             I commit to you, body, mind, and soul, forever and always. <br><br>
+                             You’ve captivated my heart in ways I never imagined possible. 
+                             The love we share is the kind that most people dream of, and I feel so lucky to call you mine.
+                             I love the way you always know how to make me laugh, even on my hardest days. Your love is my light. <br><br>
+                             No matter how far apart we are, my love for you remains as strong as ever.
+                             I think of you all the time, and every thought of you makes me miss you even more, every day without you feels incomplete. <br><br>
+                             I love you more than words can express. Distance may separate us, but nothing can separate my love for you.
+                             You are my heart, my home, and my forever. I am so grateful for every moment we share.
+                        </p>
+                        <p class="FF">♥ Yours always and forever ♥</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const heart = document.querySelector('.heart');
+
+heart.addEventListener('click', () => {
+    const envelope = document.querySelector('.envelope-wrapper');
+    const letter = document.querySelector(".letter");
+
+    envelope.classList.toggle('flap'); // Open the envelope
+    
+
+    setTimeout(() => {
+        letter.style.zIndex = "10"; // Bring letter to front
+        letter.classList.add("show"); // Fade in smoothly
+    }, 20); // Short delay
+});
+
+        
+    </script>
+</body>
+</html>
